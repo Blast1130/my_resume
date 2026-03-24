@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#name,#workEx,#me{
+    text-align: center;
+}
+
+div{
+    width: 50%;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+h2{
+    font-size: 30px;
+}
+
+#exp{
+    width: 75%;
+    margin-top: 25px;
+
+}
+
+#name{
+    font-size: x-large;
+}
+
+#me{
+    border: 5px rgb(255, 0, 225) solid;
+    width: 90%;
+}
+
+#name,#contact{
+    margin: auto;
+    width: auto;
+    margin: 20px auto;
+}
+
+#contact{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align: start;
+    font-size: 150%;
+    height: 150%;
+}
+
+#contact,#skills{
+    font-weight: 450;
+}
+
+#skills{
+    margin-right: 10px;
+    margin-top: -135px;
+    border-bottom:25px;
+    font-size: 120%;
+}
+
+#other,#education{
+    margin: 25px 50% 10px 10px;
+    width: 95%;
+}
+
+.right,#skills{
+    text-align: end;
+}
+
+.left{
+    text-align: start;
+}
