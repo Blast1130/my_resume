@@ -1,11 +1,96 @@
-* {
+.content{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    padding: 25px;
+
+    height: 100%;
+    display: grid;
+    
+
+    grid-template-areas: 
+    "n n"
+    "c s"
+    "m m"
+    "w w"
+    "o e"
+    ;
+}
+.me,.name,.exp>h2{
+    text-align: center;
+}
+.name{
+    grid-area: n;
+    
+}
+.contact{
+    grid-area: c;
+}
+.skills{
+    grid-area: s;
+    padding-right: 10px;
+    width:max-content
+}
+.me{
+    grid-area: m;
+    margin: auto 35px;
+    border:5px #ff69b4 solid;
+    border-radius: 100px;
+}
+.exp{
+    grid-area: w;
+
+    border:5px rgb(153, 0, 255) solid;
+    border-radius: 100px;
+    padding: 0 10%;
+    padding-bottom: 20px;
+    margin: 0 10%;
+}
+.exp>h2,.contact>h2,.skills>h2{
+    margin-bottom: -20px;
+}
+.education{
+    grid-area: e;
+}
+.other{
+    grid-area: o;
+}
+.right,.skills{
+    text-align: end;
 }
 
-#name,#workEx,#me{
-    text-align: center;
+.left,.contact{
+    text-align: start;
+}
+
+.right,.left{
+    padding: 10px;
+}
+
+ul{
+    list-style: none;
+}
+.exp ul{
+    margin-bottom: -20px;
+}
+
+.exp h3{
+    margin-bottom: -15px;
+}
+.skills li{
+    padding-bottom: 5px;
+    text-decoration: underline;
+    text-underline-position:auto;
+}
+h2{
+    font-size: 30px;
+}
+
+
+/*
+* {
+    box-sizing: border-box;
+    background-color: ghostwhite;
+    margin: 0;
+    padding: 0;
 }
 
 div{
@@ -17,56 +102,95 @@ ul{
     list-style: none;
 }
 
+h1{
+    color: rgba(251, 13, 108, 0.797);
+}
+
 h2{
+    color: blueviolet;
     font-size: 30px;
 }
 
-#exp{
-    width: 75%;
-    margin-top: 25px;
-
+h3,h4{
+    color: blue;
 }
 
-#name{
-    font-size: x-large;
+.name,.exp>h2,.me{
+    text-align: center;
 }
 
-#me{
+.me{
+    border-radius: 100px;
     border: 5px rgb(255, 0, 225) solid;
-    width: 90%;
+    margin-top: 30px;
+    width: 100vh;
 }
 
-#name,#contact{
-    margin: auto;
+.me>p,.me>ul,.me>strong{
+    font-size: 20px;
+}
+
+.me > h2,.exp > h2{
+    padding: 10px 0;
+}
+
+.exp,.me{
+    padding: 30px;
+}
+
+.exp{
+    overflow: hidden;
+    border-radius: 100px;
+    border: 5px blueviolet solid;
+    width: 85vh;
+    margin-top: 25px;
+}
+
+
+.name>h1{
+    font-size:48px;
+    margin-top: 20px;
+}
+
+.name,.contact{
     width: auto;
     margin: 20px auto;
 }
 
-#contact{
+.contact{
     margin-bottom: 20px;
-    margin-left: 10px;
+    margin-left: 20px;
     text-align: start;
     font-size: 150%;
     height: 150%;
 }
 
-#contact,#skills{
-    font-weight: 450;
+.contact,.skills{
+    font-weight: 400;
 }
 
-#skills{
-    margin-right: 10px;
+.skills{
+    margin-right: 20px;
     margin-top: -135px;
     border-bottom:25px;
     font-size: 120%;
 }
 
-#other,#education{
+.other,.education{
     margin: 25px 50% 10px 10px;
     width: 95%;
 }
 
-.right,#skills{
+.education>p{
+    margin-bottom: 64px;
+}
+
+.mysmartwife{
+    font-size: 400%;
+    color: ghostwhite;
+}
+
+.right,.skills{
     text-align: end;
 }
 
